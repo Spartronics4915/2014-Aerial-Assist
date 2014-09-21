@@ -19,6 +19,8 @@ public class Version {
     // Should display the distance in inches from wall
     // MoveUpToDistance moves until it is 3 feet from the wall
     
+    
+    // Example comment
     public static String getVersion() {
         return VERSION;
     }
