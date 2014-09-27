@@ -4,18 +4,7 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/Robot.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/subsystems/Harvester.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/Launch.java</file>
             <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/Version.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/AutonomousCommand.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/ArcadeDrive.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/OI.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/SendUserMessages.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/subsystems/Gyroscope.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/RobotMap.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/AutonomousCommandGroup.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/HarvesterWheelsDefault.java</file>
-            <file>file:/Users/Tarkan/2014-Aerial-Assist/ArcadeDriveRobot/src/org/usfirst/frc4915/ArcadeDriveRobot/commands/DriveStraight.java</file>
         </group>
     </open-files>
 </project-private>
