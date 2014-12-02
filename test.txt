@@ -1,1 +1,3 @@
+# I think we should delete this text file!
+
 This is for testing git commands. Ignore it, it's not important.
