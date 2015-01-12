@@ -11,6 +11,7 @@ package org.usfirst.frc4915.ArcadeDriveRobot.commands;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4915.ArcadeDriveRobot.Robot;
+import org.usfirst.frc4915.ArcadeDriveRobot.SendUserMessages;
 /**
  *
  */
@@ -18,6 +19,7 @@ public class ArcadeDrive extends Command {
     public Joystick joystickDrive;
     private double joystickX;
     private double joystickY;
+    private double joystickTwist;
     // Makes our throttle from the original [-1,1] to [.1,1]
     public ArcadeDrive() {
         // Use requires() here to declare subsystem dependencies
@@ -34,9 +36,18 @@ public class ArcadeDrive extends Command {
         joystickDrive = Robot.oi.getJoystickDrive();
         joystickX = joystickDrive.getAxis(Joystick.AxisType.kX);
         joystickY = joystickDrive.getAxis(Joystick.AxisType.kY);
+        joystickTwist = joystickDrive.getAxis(Joystick.AxisType.kTwist);
+        SendUserMessages.display(3, "Joystick twist: " + joystickTwist);
+        SendUserMessages.display(4, "X value " + joystickX);
+        SendUserMessages.display(5, "Y value: " + joystickY);
         Robot.driveTrain.joystickThrottle = Robot.driveTrain.modifyThrottle();
-        if ((Math.abs(joystickX) < 0.075) && (Math.abs(joystickY) < 0.075)) {
-            Robot.driveTrain.stop();
+        if ((Math.abs(joystickX) < 0.2) && (Math.abs(joystickY) < 0.2)) {
+            if (Math.abs(joystickTwist) < 0.2)
+                Robot.driveTrain.stop();
+            else if (joystickTwist > 0) 
+                Robot.driveTrain.turnClockwise();
+            else if (joystickTwist < 0)
+               Robot.driveTrain.turnCounterClockwise();
         } else {
             Robot.driveTrain.arcadeDrive(joystickDrive);
         }

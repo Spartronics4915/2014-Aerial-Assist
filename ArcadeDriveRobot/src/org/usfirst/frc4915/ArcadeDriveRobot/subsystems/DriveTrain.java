@@ -73,6 +73,15 @@ public class DriveTrain extends Subsystem {
     public void turn() {
         robotDrive.tankDrive(1.0, -1.0);
     }
+    
+    public void turnClockwise() {
+        robotDrive.tankDrive(-1.0, 1.0);
+    }
+    
+    public void turnCounterClockwise() {
+        robotDrive.tankDrive(1.0, -1.0);
+    }
+    
     public double modifyThrottle() {
         modifiedThrottle = 0.40 * (-1.0 * Robot.oi.joystickDrive.getAxis(Joystick.AxisType.kThrottle)) + 0.60;
         if (modifiedThrottle != joystickThrottle) {
